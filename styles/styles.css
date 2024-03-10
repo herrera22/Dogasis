@@ -12,7 +12,7 @@ nav{
 }
 nav ul{
     padding: 0;
-    padding-right: 16px;
+    padding-right: 32px;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -43,15 +43,15 @@ section#portada{
     padding: 0;
     margin: 0;
     display: flex;
-    height: 80vh;
+    height: 100vh;
     box-sizing: border-box;
     flex-direction: row;
     align-items: center;
 }
 img.dog1{
     padding: 0;
+    margin-bottom: 8rem;
     padding-left: 50px;
-    margin: 0;
     width: 600px;
     height: 800px;
 }
@@ -81,4 +81,38 @@ img.arrow{
 }
 .btn:hover{
     background-color: #583577;
+}
+/* Seccion 2 */
+section#nosotros{
+    height: 100vh;
+    background-color: #54989B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenidoNosotros{
+    width: 500px;
+    text-align: center;
+}
+
+img.dog2{
+    width: 500px;
+    height: 500px;
+    padding-left: 90px;
+    padding-top: 40px;
+}
+/* boton violeta */
+.btn2{
+    background-color:#583577;
+    width:250px;
+    height: 60px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0,0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.btn2:hover{
+    background-color: #261635;
 }
