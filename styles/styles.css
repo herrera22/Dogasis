@@ -85,7 +85,6 @@ img.arrow{
 /* Seccion 2 */
 section#nosotros{
     height: 100vh;
-    background-color: #54989B;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,4 +114,82 @@ img.dog2{
 }
 .btn2:hover{
     background-color: #261635;
+}
+/* Seccion de nuestros valores */
+img.arrow2{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 600px;
+    top: 1150px;
+}
+aside#nosotros2 h2{
+    text-align: center;
+    padding-top: 32px;
+}
+aside#nosotros2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    padding-left: 150px;
+    align-items: center;
+    text-align: center;
+}
+.card img{
+    width: 170px;
+    height: auto;
+}
+.card-v{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 150px;
+    align-items: center;
+    text-align: center;
+}
+.card-v img{
+    width: 170px;
+    height: auto;
+}
+/* seccion de servicios */
+.arrow-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+}
+.arrow-position img{
+    width: auto;
+    height: 170px;
+}
+section#servicios{
+    height: 100vh;
+}
+section#servicios h2 , h3{
+    text-align: center;
+}
+#servicios .card-order{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-servicio{
+    margin-top: 32px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #583577;
+    width: 250px;
+    height: 270px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in;
+}
+.card-servicio:hover{
+    background-color: #54989B;
+    color: white;
 }
