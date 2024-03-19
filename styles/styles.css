@@ -1,9 +1,10 @@
 body{
-    background-color: #F0DCFF;
+    background-color: #583577;
     margin: 0;
+    color: #F0DCFF;
 }
 nav{
-    background-color: #583577;
+    background-color: #F0DCFF;
     height: 12vh;
     width: 100%;
     display: flex;
@@ -21,7 +22,7 @@ nav ul{
 }
 nav li.navlist{
     list-style: none;
-    color: white;
+    color: #583577;
 }
 nav li.navlist a{
     display: inline;
@@ -36,8 +37,8 @@ nav li.navlist a:hover{
 nav img{
     padding-left: 16px;
     display: flex;
-    width:60px;
-    height: 60px;
+    width:200px;
+    height: auto;
 }
 section#portada{
     padding: 0;
@@ -126,6 +127,7 @@ img.arrow2{
 aside#nosotros2 h2{
     text-align: center;
     padding-top: 32px;
+    padding-bottom: 32px;
 }
 aside#nosotros2{
     display: flex;
@@ -138,9 +140,10 @@ aside#nosotros2{
     padding-left: 150px;
     align-items: center;
     text-align: center;
+    height: 100px;
 }
 .card img{
-    width: 170px;
+    width: 200px;
     height: auto;
 }
 .card-v{
@@ -152,7 +155,7 @@ aside#nosotros2{
     text-align: center;
 }
 .card-v img{
-    width: 170px;
+    width: 200px;
     height: auto;
 }
 /* seccion de servicios */
@@ -188,6 +191,8 @@ section#servicios h2 , h3{
     height: 270px;
     border-radius: 20px;
     transition: background-color 0.3s ease-in;
+    background-color: #F0DCFF;
+    color: #583577;
 }
 .card-servicio:hover{
     background-color: #54989B;
