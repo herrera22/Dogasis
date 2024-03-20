@@ -1,7 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 body{
     background-color: #583577;
     margin: 0;
     color: #F0DCFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li{
+        font-family: "Rubik", sans-serif;
+    }
+h1 {
+        font-size: 32px;
+        font-weight: 800;
+}
+h2 {
+        font-size: 24px;
+        font-weight: 600;
+}
+h3 {
+        font-size: 20px;
+        font-weight: 400;
+}
+h4 {
+        font-size: 16px;
+        font-weight: 300;
+}
+h5 {
+        font-size: 12px;
+        font-weight: 300;
+}
+h6 {
+        font-size: 6px;
+        font-weight: 300;
+}
+    
+a {
+        color: #fff;
+        text-decoration: none;
+}
+li{
+    font-weight: 400;
+}
+span.titulo{
+    font-weight: 800;
+    font-size: 32px;
+    color: #54989B;
+}
+span.subtitulo{
+    font-weight: 800;
+    font-size: 26px;
+    color: #54989B;
+}
+span.texto{
+    font-weight: 800;
+    font-size: 22px;
+    color: #54989B;
 }
 nav{
     background-color: #F0DCFF;
@@ -23,6 +85,7 @@ nav ul{
 nav li.navlist{
     list-style: none;
     color: #583577;
+    font-weight: 500;
 }
 nav li.navlist a{
     display: inline;
@@ -31,7 +94,7 @@ nav li.navlist a{
     transition: color 0.3s ease;
 }
 nav li.navlist a:hover{
-    color: red;
+    color: #54989B;
 }
 
 nav img{
@@ -58,20 +121,25 @@ img.dog1{
 }
 img.arrow{
     position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 350px;
-    left: 300px;
+    width: 400px;
+    height: auto;
+    top: 500px;
+    left: 400px;
 }
 .contenidoPortada{
     margin-left: 10%;
     display: flex;
     flex-direction: column;
     width: 500px;
+    justify-content: space-between;
+}
+.contenidoPortada h1,h2{
+    margin: 0;
+    padding-top: 10px;
 }
 .btn{
     background-color:#54989B;
-    width:250px;
+    width:350px;
     height: 60px;
     color: white;
     border-radius: 20px;
@@ -79,6 +147,9 @@ img.arrow{
     cursor: pointer;
     box-shadow: 0 5px 8px rgba(0, 0,0, 0.2);
     transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 600;
 }
 .btn:hover{
     background-color: #583577;
@@ -118,11 +189,12 @@ img.dog2{
 }
 /* Seccion de nuestros valores */
 img.arrow2{
+    z-index: -1;
     position: absolute;
-    width: 300px;
-    height: 200px;
-    left: 600px;
-    top: 1150px;
+    width: 270px;
+    height: auto;
+    left: 680px;
+    top: 1190px;
 }
 aside#nosotros2 h2{
     text-align: center;
@@ -132,7 +204,7 @@ aside#nosotros2 h2{
 aside#nosotros2{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
 }
 .card{
     display: flex;
@@ -158,19 +230,16 @@ aside#nosotros2{
     width: 200px;
     height: auto;
 }
-/* seccion de servicios */
-.arrow-position{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 400px;
-}
-.arrow-position img{
-    width: auto;
-    height: 170px;
+img.arrow3{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 1830px;
+    left: 780px;
 }
 section#servicios{
     height: 100vh;
+    padding-top: 16px;
 }
 section#servicios h2 , h3{
     padding-top: 16px;
@@ -189,11 +258,18 @@ section#servicios h2 , h3{
     flex-direction: column;
     border: solid 2px #583577;
     width: 250px;
-    height: 310px;
+    height: 330px;
     border-radius: 20px;
     transition: background-color 0.3s ease-in;
     background-color: #F0DCFF;
     color: #583577;
+}
+.card-servicio li{
+    margin: 5px;
+}
+.card-servicio h4{
+    font-weight: 500;
+    font-size: 20px;
 }
 .card-servicio:hover{
     background-color: #54989B;
