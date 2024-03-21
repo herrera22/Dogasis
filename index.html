@@ -8,7 +8,10 @@
 </head>
 <body>
     <nav>
-        <img src="images/logo.svg" alt="logo">
+        <div class="logos">
+            <img src="images/logo.svg" alt="logo">
+            <img class="logo_texto" src="images/Dogasis_Letras.svg" alt="logo de texto de dogasis">
+        </div>
         <ul>
             <li class="navlist"><a href="#nosotros">Nosotros</a></li>
             <li class="navlist"><a href="#servicios">Servicios</a></li>
@@ -102,10 +105,35 @@
         </div>
     </section>
     <section id="contacto">
-        
+        <div class="titulos">
+            <h2>¡Queremos saber de ti!</h2>
+            <h3>Si te interesan nuestro servicios, deja tus datos y te contactaremos con<br>información detallada sobre <span>Dogasis</span>.<br>
+            Al hacerlo podrás recibir <span class="subtitulo_form">10% de descuento </span>en nuestros servicios.</h3>
+        </div>
+        <div class="contenido_form">
+            <form class="formulario">
+                <label>nombre
+                    <input type="text" name="name" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>Numero Telefonico
+                    <input type="tel" name="tel" required>
+                </label>
+                <label for="donde">De donde eres?</label>
+                    <select name="donde" id="donde">
+                        <option value="" disabled selected>Elige tu ciudad</option>
+                        <option value="ciudad1">Cuernavaca</option>
+                        <option value="ciudad2">Ciudad de Mexico</option>
+                    </select>
+                <button type="submit" class="btn-form">Enviar Formulario</button>
+            </form>
+            <img src="images/imagen-form.svg" alt="imagen del formulario">
+        </div>
     </section>
     <footer id="footer">
-
+    <h2>jajklsdnkjasndlkjsad</h2>
     </footer>
 </body>
 </html>

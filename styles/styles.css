@@ -15,7 +15,8 @@ h4,
 h5,
 h6,
 a,
-li{
+li,
+label{
         font-family: "Rubik", sans-serif;
     }
 h1 {
@@ -60,6 +61,11 @@ span.subtitulo{
     font-size: 26px;
     color: #54989B;
 }
+span.subtitulo_form{
+    font-weight: 800;
+    font-size: 24px;
+    color:#583577;
+}
 span.texto{
     font-weight: 800;
     font-size: 22px;
@@ -97,11 +103,16 @@ nav li.navlist a:hover{
     color: #54989B;
 }
 
-nav img{
-    padding-left: 16px;
+nav .logos{
     display: flex;
-    width:200px;
-    height: auto;
+    flex-direction: row;
+}
+.logos img{
+    width: 19%;
+}
+.logos img.logo_texto{
+    padding-top: 36px;
+    width: 30%;
 }
 section#portada{
     padding: 0;
@@ -121,10 +132,10 @@ img.dog1{
 }
 img.arrow{
     position: absolute;
-    width: 400px;
+    width: 35%;
     height: auto;
-    top: 500px;
-    left: 400px;
+    top: 75%;
+    left: 33%;
 }
 .contenidoPortada{
     margin-left: 10%;
@@ -156,7 +167,7 @@ img.arrow{
 }
 /* Seccion 2 */
 section#nosotros{
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,10 +202,10 @@ img.dog2{
 img.arrow2{
     z-index: -1;
     position: absolute;
-    width: 270px;
+    width: 18%;
     height: auto;
-    left: 680px;
-    top: 1190px;
+    left: 55%;
+    top: 193%;
 }
 aside#nosotros2 h2{
     text-align: center;
@@ -231,17 +242,20 @@ aside#nosotros2{
     height: auto;
 }
 img.arrow3{
-    width: 250px;
+    width: 16%;
     height: auto;
     position: absolute;
-    top: 1830px;
-    left: 780px;
+    top: 295%;
+    left: 62%;
 }
 section#servicios{
-    height: 100vh;
+    height: 120vh;
     padding-top: 16px;
 }
-section#servicios h2 , h3{
+section#servicios h2{
+    text-align: center;
+}
+section#servicios h3{
     padding-top: 16px;
     text-align: center;
 }
@@ -252,13 +266,13 @@ section#servicios h2 , h3{
     align-items: center;
 }
 .card-servicio{
-    margin-top: 32px;
+    margin-top: 12px;
     margin-left: 32px;
     display: flex;
     flex-direction: column;
     border: solid 2px #583577;
-    width: 250px;
-    height: 330px;
+    width: 18%;
+    height: 300px;
     border-radius: 20px;
     transition: background-color 0.3s ease-in;
     background-color: #F0DCFF;
@@ -266,6 +280,7 @@ section#servicios h2 , h3{
 }
 .card-servicio li{
     margin: 5px;
+    font-size: 14px;
 }
 .card-servicio h4{
     font-weight: 500;
@@ -287,5 +302,76 @@ section#servicios h2 , h3{
 }
 section#contacto{
     background-color: #54989B;
-    height: 90vh;
+    height: 100vh;
+    margin: 0;
+    padding: 16px;
+}
+#contacto .titulos{
+    text-align: left;
+    margin-left: 10%;
+    width: 40%;
+
+}
+#contacto .titulos h2{
+    color: #583577;
+    font-size: 32px;
+}
+#contacto .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10%;
+}
+
+#contacto .formulario label{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6px;
+
+}
+#contacto .formulario input{
+    border: 2px solid #583577; padding: 8px ;
+    border-radius: 20px;
+    width: 70%;
+    background-color:#54989B;
+
+}
+#contacto .formulario select{
+    border: 2px solid #583577; padding: 8px ;
+    border-radius: 20px;
+    width: 75%;
+    background-color:#54989B;
+    margin-bottom: 5%;
+}
+#contacto .formulario option{
+    background-color:#F0DCFF;
+
+}
+.btn-form{
+    width: 70%;
+    border: 2px; padding: 4% ;
+    border-radius: 20px;
+    background-color:#583577;
+    margin-bottom: 5%;
+    color: #F0DCFF;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btn-form:hover{
+    background-color: #261635;
+}
+.contenido_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.contenido_form img{
+    width: 30%;
+    margin-right: 10%;
+}
+footer{
+    height: 50vh;
 }
