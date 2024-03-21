@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dogasis</title>
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- sdk del formulario -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('b9neQrNuUT_GGvOOF')
+    </script>
 </head>
 <body>
     <nav>
@@ -111,23 +119,23 @@
             Al hacerlo podrás recibir <span class="subtitulo_form">10% de descuento </span>en nuestros servicios.</h3>
         </div>
         <div class="contenido_form">
-            <form class="formulario">
-                <label>nombre
-                    <input type="text" name="name" required>
+            <form class="formulario" id="form">
+                <label>Nombre y Apellidogit 
+                    <input type="text" name="from_name" required id="from_name">
                 </label>
                 <label>Email
-                    <input type="email" name="email" required>
+                    <input type="email" name="email_id" required id="email_id">
                 </label>
-                <label>Numero Telefonico
-                    <input type="tel" name="tel" required>
+                <label for="tel_id">Numero Telefonico
+                    <input type="tel" pattern="[0-9]+" name="tel_id" required id="tel_id">
                 </label>
-                <label for="donde">De donde eres?</label>
-                    <select name="donde" id="donde">
+                <label for="from_city">De donde eres?</label>
+                    <select name="from_city" id="from_city" required>
                         <option value="" disabled selected>Elige tu ciudad</option>
-                        <option value="ciudad1">Cuernavaca</option>
-                        <option value="ciudad2">Ciudad de Mexico</option>
+                        <option value="Cuernavaca">Cuernavaca</option>
+                        <option value="Ciudad de mexico">Ciudad de Mexico</option>
                     </select>
-                <button type="submit" class="btn-form">Enviar Formulario</button>
+                <input type="submit" class="btn-form" id="button" value="Send email"></input>
             </form>
             <img src="images/imagen-form.svg" alt="imagen del formulario">
         </div>
@@ -135,5 +143,6 @@
     <footer id="footer">
     <h2>jajklsdnkjasndlkjsad</h2>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
