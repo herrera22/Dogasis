@@ -248,6 +248,7 @@ img.arrow3{
     top: 295%;
     left: 62%;
 }
+/* seccion de servicios */
 section#servicios{
     height: 120vh;
     padding-top: 16px;
@@ -300,6 +301,7 @@ section#servicios h3{
     width: 100px;
     height: auto;
 }
+/* formulario */
 section#contacto{
     background-color: #54989B;
     height: 100vh;
@@ -374,4 +376,139 @@ section#contacto{
 }
 footer{
     height: 50vh;
+}
+@media only screen and (max-width:400px){
+
+    nav{
+        width: 100vw;
+        height: 20vw;
+    }
+    nav .logos img{
+        width: 20%;
+    }
+    nav .logos img.logo_texto{
+        width: 35%;
+        padding-bottom: 6px;
+    }
+    nav li{
+        display: none;
+    }
+    /* seccion en mobile */
+    section#portada{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 30%;
+        height: 85vh;
+    }
+    /* a revisar  */
+    img.dog1{
+        display: none;
+        z-index: -1;
+        position: absolute;
+        padding: 0;
+        top: 10px;
+        margin-bottom: 8rem;
+        padding-left: 50px;
+        width: 300px;
+    }
+    /* a revisar */
+    img.arrow{   
+        width: 70%;
+        top: 73%;
+        left: 20%;
+    }
+    .contenidoPortada{
+        width: 80%;
+    }
+    .contenidoPortada h1,h2{
+        padding-top: 12px;
+        font-size: 24px;
+    }
+    .btn{
+        margin-top: 34px;
+        width:200px;
+        font-size: 24px;
+    }
+    /* seccion 2 */
+section#nosotros{
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 32px;
+}
+.contenidoNosotros{
+    width: 90%;
+    text-align: center;
+    padding-bottom: 32px;
+
+}
+
+img.dog2{
+    width: 200px;
+    padding-right:20%;
+    padding-top: 0;
+}
+    /* seccion 3 */
+    aside#nosotros2{
+        align-items: center;
+        height: 100vh;
+    }
+    aside#nosotros2 h2{
+        padding-top: 64px;
+        padding-bottom: 0px;
+    }
+    .card{
+        margin-top: 15%;
+        padding-left: 5%;
+        width: 80vw;
+    }
+    .card h3{
+        font-size: 18px;
+    }
+    .card span{
+        font-size: 19px;
+    }
+    .card-v span{
+        font-size: 19px;
+    }
+    .card-v h3{
+        font-size: 18px;
+    }
+    .card img{
+        width: 35%;
+    }
+    .card-v{
+        padding-right: 5%;
+        width: 80vw;
+        margin-top: 15%;
+    }
+    .card-v img{
+        width: 35%;
+    }
+    img.arrow3{
+        display: none;
+    }
+    /* seccion de servicios */
+    section#servicios{
+        height: auto;
+        width: auto;
+        padding-bottom: 32px;
+    }
+    section#servicios h3{
+        font-size: 16px;
+        width: 90vw;
+        padding-left: 2%;
+    }
+    #servicios .card-order{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-servicio{
+        margin-top: 12px;
+        margin-left: 0;
+        width: 60%;
+        height: 320px;
+    }
+    
 }
