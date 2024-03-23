@@ -273,7 +273,7 @@ section#servicios h3{
     flex-direction: column;
     border: solid 2px #583577;
     width: 18%;
-    height: 300px;
+    height: 350px;
     border-radius: 20px;
     transition: background-color 0.3s ease-in;
     background-color: #F0DCFF;
@@ -346,7 +346,9 @@ section#contacto{
     margin-bottom: 5%;
 }
 #contacto .formulario option{
-    background-color:#F0DCFF;
+    background-color: #F0DCFF;
+    font-family: "Rubik";
+    color: #54989B;
 
 }
 .btn-form{
@@ -377,7 +379,7 @@ section#contacto{
 footer{
     height: 50vh;
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:600px){
 
     nav{
         width: 100vw;
@@ -426,17 +428,17 @@ footer{
     }
     .btn{
         margin-top: 34px;
-        width:200px;
-        font-size: 24px;
+        width:250px;
+        font-size: 20px;
     }
     /* seccion 2 */
 section#nosotros{
     flex-direction: column;
-    height: 100vh;
-    padding-top: 32px;
+    height: auto;
+
 }
 .contenidoNosotros{
-    width: 90%;
+    width: auto;
     text-align: center;
     padding-bottom: 32px;
 
@@ -444,13 +446,15 @@ section#nosotros{
 
 img.dog2{
     width: 200px;
-    padding-right:20%;
+    margin-right: 15%;
     padding-top: 0;
+    height: 200px;
 }
     /* seccion 3 */
     aside#nosotros2{
         align-items: center;
-        height: 100vh;
+        height: auto;
+        padding-bottom: 64px;
     }
     aside#nosotros2 h2{
         padding-top: 64px;
@@ -490,25 +494,96 @@ img.dog2{
     /* seccion de servicios */
     section#servicios{
         height: auto;
-        width: auto;
+        width: 100%;
         padding-bottom: 32px;
     }
     section#servicios h3{
         font-size: 16px;
-        width: 90vw;
-        padding-left: 2%;
+        width: 90%;
+        margin-left: 5%;
+        padding: 0;
     }
     #servicios .card-order{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
     .card-servicio{
         margin-top: 12px;
         margin-left: 0;
-        width: 60%;
+        width: 70%;
         height: 320px;
     }
-    
+    /* formulario */
+    section#contacto{
+        background-color: #54989B;
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    #contacto .titulos{
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+    #contacto .titulos h2{
+        color: #583577;
+        font-size: 32px;
+    }
+    #contacto .titulos h3{
+        font-size: 18px;
+    }
+    #contacto .titulos span{
+        font-size: 19px;
+    }
+    #contacto .formulario{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #contacto .formulario label{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 6px;
+    }
+    #contacto .formulario input{
+        border: 2px solid #583577; padding: 8px ;
+        border-radius: 20px;
+        width: 78%;
+        background-color:#54989B;
+
+    }
+    #contacto .formulario select{
+        border: 2px solid #583577; padding: 8px ;
+        border-radius: 20px;
+        width: 85%;
+        background-color:#54989B;
+        margin-bottom: 5%;
+    }
+    .button_position{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .btn-form{
+        width: 100%;
+    }
+    .contenido_form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido_form img{
+        width: 50%;
+        margin-right: 0;
+    }
+    footer{
+        height: 50vh;
+    }
 }
