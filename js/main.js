@@ -1,3 +1,4 @@
+// funcion del fomrulario
 const btn = document.getElementById('button');
 console.log("online")
 document.getElementById('form')
