@@ -13,14 +13,20 @@
         scale: 100%;
     }
 }
-img, h3{
+.perro,
+.dog2, 
+h3, 
+.formulario,
+.icon-titulo,
+li
+{
     view-timeline: --image;
     view-timeline-axis: block;
 
     animation-timeline: --image;
     animation-name:show ;
     
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 25% cover 40%;
 
     animation-fill-mode:both ;
 }
@@ -159,12 +165,14 @@ img.dog1{
     width: 600px;
     height: 800px;
 }
-img.arrow{
-    position: absolute;
-    width: 35%;
-    height: auto;
-    top: 75%;
-    left: 33%;
+.flecha_portada{
+    position:absolute;
+    top: 400px;
+    left: 400px;
+}
+.flecha_portada img{
+    width: 400px;
+    height: 400px;
 }
 .contenidoPortada{
     margin-left: 10%;
@@ -402,7 +410,7 @@ section#contacto{
     align-items: start;
 }
 .contenido_form img{
-    width: 30%;
+    width: 50%;
     margin-right: 10%;
 }
 footer{
@@ -410,6 +418,9 @@ footer{
 }
 @media only screen and (max-width:600px){
 
+    span.titulo{
+        font-size: 26px;
+    }
     nav{
         width: 100vw;
         height: 20vw;
@@ -424,39 +435,36 @@ footer{
     nav li{
         display: none;
     }
+
     /* seccion en mobile */
     section#portada{
         display: flex;
-        flex-direction: row;
-        padding-bottom: 30%;
-        height: 85vh;
+        flex-direction: column;
+        padding-bottom: 32px;
+        height: auto;
     }
     /* a revisar  */
     img.dog1{
-        display: none;
-        z-index: -1;
-        position: absolute;
         padding: 0;
-        top: 10px;
-        margin-bottom: 8rem;
-        padding-left: 50px;
-        width: 300px;
+        margin-bottom: 0;
+        padding-left: 50%;
+        width: 190px;
+        height: 200px;
     }
-    /* a revisar */
-    img.arrow{   
-        width: 70%;
-        top: 73%;
-        left: 20%;
+    .flecha_portada{
+        display: none;
     }
     .contenidoPortada{
+        padding-top: 30%;
         width: 80%;
+        margin-left: 0;
     }
     .contenidoPortada h1,h2{
         padding-top: 12px;
         font-size: 24px;
     }
     .btn{
-        margin-top: 34px;
+        margin-top: 32px;
         width:250px;
         font-size: 20px;
     }
@@ -468,16 +476,23 @@ footer{
     }
     .contenidoNosotros{
         width: auto;
-        text-align: center;
-        padding-bottom: 32px;
-
+        text-align: left;
+        padding-left: 16px;
+        padding-bottom: 16px;
+    }
+    .contenidoNosotros h3{
+        font-size: 16px;
+        width: 80%;
     }
 
     img.dog2{
         width: 200px;
-        margin-right: 15%;
+        margin-right: 0;
         padding-top: 0;
         height: 200px;
+    }
+    img.arrow2{
+        display: none;
     }
     /* seccion 3 */
     aside#nosotros2{
