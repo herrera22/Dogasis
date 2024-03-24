@@ -133,13 +133,15 @@ nav li.navlist a:hover{
 nav .logos{
     display: flex;
     flex-direction: row;
+    padding-left: 16px;
 }
 .logos img{
-    width: 19%;
+    width: 10%;
+
 }
 .logos img.logo_texto{
-    padding-top: 36px;
-    width: 30%;
+    padding-top: 40px;
+    width: 20%;
 }
 section#portada{
     padding: 0;
