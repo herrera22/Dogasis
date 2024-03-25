@@ -15,10 +15,11 @@
 }
 .perro,
 .dog2, 
-h3, 
+section h3, 
 .formulario,
 .icon-titulo,
-li
+.lista,
+.card-servicio
 {
     view-timeline: --image;
     view-timeline-axis: block;
@@ -142,12 +143,12 @@ nav .logos{
     padding-left: 16px;
 }
 .logos img{
-    width: 10%;
+    width: 8%;
 
 }
 .logos img.logo_texto{
-    padding-top: 40px;
-    width: 20%;
+    padding-top: 10px;
+    width: 16%;
 }
 section#portada{
     padding: 0;
@@ -413,224 +414,33 @@ section#contacto{
     width: 50%;
     margin-right: 10%;
 }
+/* contenido footer  */
 footer{
-    height: 50vh;
+    background-color: #F0DCFF;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #583577;
+    height: 35vh;
 }
-@media only screen and (max-width:600px){
-
-    span.titulo{
-        font-size: 26px;
-    }
-    nav{
-        width: 100vw;
-        height: 20vw;
-    }
-    nav .logos img{
-        width: 20%;
-    }
-    nav .logos img.logo_texto{
-        width: 35%;
-        padding-bottom: 6px;
-    }
-    nav li{
-        display: none;
-    }
-
-    /* seccion en mobile */
-    section#portada{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 32px;
-        height: auto;
-    }
-    /* a revisar  */
-    img.dog1{
-        padding: 0;
-        margin-bottom: 0;
-        padding-left: 40%;
-        width: 190px;
-        height: 200px;
-    }
-    .flecha_portada{
-        display: none;
-    }
-    .contenidoPortada{
-        padding-top: 30%;
-        width: 80%;
-        margin-left: 0;
-    }
-    .contenidoPortada h1,h2{
-        padding-top: 12px;
-        font-size: 24px;
-    }
-    .btn{
-        margin-top: 32px;
-        width:250px;
-        font-size: 20px;
-    }
-    /* seccion 2 */
-    section#nosotros{
-        flex-direction: column;
-        height: auto;
-
-    }
-    .contenidoNosotros{
-        width: auto;
-        text-align: left;
-        padding-left: 16px;
-        padding-bottom: 16px;
-    }
-    .contenidoNosotros h3{
-        font-size: 16px;
-        width: 80%;
-    }
-
-    img.dog2{
-        width: 200px;
-        margin-right: 60%;
-        padding-top: 0;
-        height: 200px;
-    }
-    img.arrow2{
-        display: none;
-    }
-    /* seccion 3 */
-    aside#nosotros2{
-        align-items: center;
-        height: auto;
-        padding-bottom: 64px;
-    }
-    aside#nosotros2 h2{
-        padding-top: 64px;
-        padding-bottom: 0px;
-    }
-    .card{
-        margin-top: 15%;
-        padding-left: 5%;
-        width: 80vw;
-    }
-    .card h3{
-        font-size: 18px;
-    }
-    .card span{
-        font-size: 19px;
-    }
-    .card-v span{
-        font-size: 19px;
-    }
-    .card-v h3{
-        font-size: 18px;
-    }
-    .card img{
-        width: 35%;
-    }
-    .card-v{
-        padding-right: 5%;
-        width: 80vw;
-        margin-top: 15%;
-    }
-    .card-v img{
-        width: 35%;
-    }
-    img.arrow3{
-        display: none;
-    }
-    /* seccion de servicios */
-    section#servicios{
-        height: auto;
-        width: 100%;
-        padding-bottom: 32px;
-    }
-    section#servicios h3{
-        font-size: 16px;
-        width: 90%;
-        margin-left: 5%;
-        padding: 0;
-    }
-    #servicios .card-order{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-    .card-servicio{
-        margin-top: 12px;
-        margin-left: 0;
-        width: 70%;
-        height: 320px;
-    }
-    /* formulario */
-    section#contacto{
-        background-color: #54989B;
-        height: auto;
-        width: auto;
-        margin: 0;
-    }
-    #contacto .titulos{
-        text-align: center;
-        margin-left: 0;
-        width: 100%;
-    }
-    #contacto .titulos h2{
-        color: #583577;
-        font-size: 32px;
-    }
-    #contacto .titulos h3{
-        font-size: 18px;
-    }
-    #contacto .titulos span{
-        font-size: 19px;
-    }
-    #contacto .formulario{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin-left: 0;
-    }
-
-    #contacto .formulario label{
-        display: flex;
-        flex-direction: column;
-    }
-    #contacto .formulario input{
-        border: 2px solid #583577; padding: 8px ;
-        border-radius: 20px;
-        width: 78%;
-        background-color:#54989B;
-
-    }
-    #contacto .formulario select{
-        border: 2px solid #583577; padding: 8px ;
-        border-radius: 20px;
-        width: 85%;
-        background-color:#54989B;
-        margin-bottom: 5%;
-    }
-    .button_position{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-    }
-    .btn-form{
-        width: 100%;
-    }
-    .contenido_form{
-        flex-direction: column;
-        align-items: center;
-    }
-    .contenido_form img{
-        width: 50%;
-        margin-right: 0;
-    }
-    footer{
-        height: 50vh;
-    }
+footer h3{
+    font-size: 16px;
+    font-weight: bold;
 }
-@media only screen and (min-width:600px) and (max-width:1200px){
+img.logo_footer{
+    margin-top: 32px;
+    width: 300px;
+}
+.redes{
+    margin-right: 16px;
+}
+.redes img{
+    padding-left: 16px;
+    width: 26px;
+}
+
+@media only screen and (max-width:1200px){
     body{
         display: none;
     }
