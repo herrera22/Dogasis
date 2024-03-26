@@ -132,12 +132,10 @@
                 <label for="tel_id">Numero Telefonico
                     <input type="tel" pattern="[0-9]+" name="tel_id" required id="tel_id">
                 </label>
-                <label for="from_city">De donde eres?</label>
-                    <select name="from_city" id="from_city" required>
-                        <option value="" disabled selected>Elige tu ciudad</option>
-                        <option value="Cuernavaca">Cuernavaca</option>
-                        <option value="Ciudad de mexico">Ciudad de Mexico</option>
-                    </select>
+                <label for="from_city">De donde eres?
+                    <input type="ciudad" name="from_city" id="from_city" required>
+                </label>
+
                     <div class="button_position">
                         <button type="submit" class="btn-form" id="button" value="Send email">Enviar</button>
                     </div>
@@ -146,22 +144,48 @@
         </div>
     </section>
     <footer id="footer">
-        <img class="logo_footer" src="images/Dogasis_Letras.svg" alt="logo dogasis">
-        <h3>Si quieres saber mas de Dogasis, contáctanos!</h3>
-            <div class="redes">
-                <a href="https://www.instagram.com/dogasis__/" target="_blank">
-                    <img src="images/Instagram.svg" alt="link a instagram">
-                </a>
-                <a href="https://www.facebook.com/dogasis.school?mibextid=LQQJ4d" target="_blank">
-                    <img src="images/Facebook.svg" alt="link a facebook">
-                </a>
-                <a href="mailto:dogasis.school@gmail.com" target="_blank">
-                    <img src="images/Google.svg" alt="link a email">
-                </a>
-                <a href="https://www.google.com/maps/place/R%C3%ADo+Atoyac,+Lomas+de+San+Lorenzo,+09780+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.3200569,-99.0582449,21z/data=!4m6!3m5!1s0x85ce0260120f6c3d:0xb002f77e21149cb4!8m2!3d19.3200924!4d-99.0581869!16s%2Fg%2F1tfqg3zv?entry=ttu" target="_blank">
-                    <img src="images/locacion.svg" alt="link a mapa">
-                </a>
+        <div class="titulos_footer">
+            <img src="images/Dogasis_Letras.svg" alt="logo de dogasis">
+            <ul>
+                <li class="navlist-foo"><a href="#nosotros">Nosotros</a></li>
+                <li class="navlist-foo"><a href="#servicios">Servicios</a></li>
+                <li class="navlist-foo"><a href="#contacto">Contacto</a></li>
+            </ul>
+            <h5>@2024Dogasis</h5>
+        </div>
+        <div class="contactos">
+            <div class="contacto">
+                <h3>Email</h5>
+                <div class="direccion">
+                    <img src="images/email.svg" alt="icono email">
+                    <h5>dogasis.school@gmail.com</h5>
+                </div>
             </div>
+            <div class="contacto">
+                <h3>N° Telefonico Y Domiciolio</h5>
+                <div class="direccion">
+                    <img src="images/Telefono.svg" alt="icono email">
+                    <h5>+52 1 56 3082 9921</h5>
+                </div>
+                <div class="direccion">
+                    <img src="images/locacion.svg" alt="icono email">
+                    <h5>Rio Atoyac 225 col lomas de <br> San Lorenzo alcaldía Iztapalapa <br>
+                        Cp. 09780m</h5>
+                </div>
+                <div class="redes">
+                    <h3>Redes</h3>
+                    <div class="redes-icon">
+                        <a href="https://www.instagram.com/dogasis__/" target="_blank">
+                            <img src="images/Instagram.svg" alt="redes sociales">
+                        </a>
+                        <a href="https://www.facebook.com/dogasis.school?mibextid=LQQJ4d" target="_blank">
+                            <img src="images/Facebook.svg" alt="redes sociales">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </footer>
     <script src="js/main.js"></script>
 </body>

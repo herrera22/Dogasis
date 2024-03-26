@@ -374,21 +374,8 @@ section#contacto{
     border-radius: 20px;
     width: 70%;
     background-color:#54989B;
+}
 
-}
-#contacto .formulario select{
-    border: 2px solid #583577; padding: 8px ;
-    border-radius: 20px;
-    width: 75%;
-    background-color:#54989B;
-    margin-bottom: 5%;
-}
-#contacto .formulario option{
-    background-color: #F0DCFF;
-    font-family: "Rubik";
-    color: #54989B;
-
-}
 .btn-form{
     width: 70%;
     border: 2px; padding: 4% ;
@@ -415,29 +402,85 @@ section#contacto{
     margin-right: 10%;
 }
 /* contenido footer  */
-footer{
-    background-color: #F0DCFF;
+footer#footer{
     height: auto;
+    background-color: #F0DCFF;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.titulos_footer{
+    padding-top: 5%;
+    padding-left: 12%;
+    color:#583577
+}
+.titulos_footer img{
+    width: 60%;
+}
+.titulos_footer h5{
+    padding-left: 6px;
+}
+footer ul{
+    padding: 0;
+    padding-top: 6px;
+    padding-right: 32px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    z-index: 10;
+}
+footer li.navlist-foo{
+    padding-left: 6px;
+    list-style: none;
     color: #583577;
-    height: 35vh;
+    font-weight: 500;
 }
-footer h3{
-    font-size: 16px;
-    font-weight: bold;
+footer li.navlist-foo a{
+    display: inline;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease ;
 }
-img.logo_footer{
-    margin-top: 32px;
-    width: 300px;
+footer li.navlist-foo a:hover{
+    color: #54989B;
+}
+.contactos{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    width: 50%;
+}
+.contacto{
+    padding-right: 6%;
+}
+.contacto h3{
+    color: #583577;
+    margin: 0;
+    font-weight: 500;
+}
+.contacto .direccion{
+    display: flex;
+    flex-direction: row;
+}
+.direccion h5{
+    padding-left: 6px;
+    color: #583577;
+    font-weight: 500;
 }
 .redes{
-    margin-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 32px;
 }
-.redes img{
-    padding-left: 16px;
-    width: 26px;
+.redes-icon{
+    align-items: center;
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    width: 30%;
+}
+.redes-icon img{
+    width: 30px;
 }
 
 @media only screen and (max-width:1200px){
